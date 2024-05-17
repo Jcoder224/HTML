@@ -6,30 +6,42 @@ console.log(cvalue.textContent)
 function incr() {
   c++
   cvalue.textContent = c;
+
+  if (c <= 0) {
+    cvalue.textContent = stop(decr)
+  }
+  if (c < 0) {
+    console.log(c = "this program is not count after 20 and before 0")
+  }
+
+  else if (c >= 20) {
+    cvalue.textContent = stop(incr)
+  }
   
+
   if (c % 2 === 0) {
     result.textContent = "The count is EVEN.";
-} else {
+  } else {
     result.textContent = "The count is ODD.";
-} 
+  }
 }
 
 function decr() {
   c--
   cvalue.textContent = c
   if (c <= 0) {
-    cvalue.textContent = 0
+    cvalue.textContent = stop(decr)
 
   }
   else if (c >= 20) {
-    cvalue.textContent = 0
+    cvalue.textContent = stop(incr)
   }
 
   if (c % 2 === 0) {
     result.textContent = "The count is EVEN.";
-} else {
+  } else {
     result.textContent = "The count is ODD.";
-}
+  }
 
 }
 
