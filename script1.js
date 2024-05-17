@@ -10,10 +10,7 @@ function incr() {
   if (c <= 0) {
     cvalue.textContent = stop(decr)
   }
-  if (c < 0) {
-    console.log(c = "this program is not count after 20 and before 0")
-  }
-
+ 
   else if (c >= 20) {
     cvalue.textContent = stop(incr)
   }
